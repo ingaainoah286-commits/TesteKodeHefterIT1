@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlekurv</title>
+</head>
+<body>
+
+    <script>
+
+        const produkter = [ 
+            { 
+                id: 1, 
+
+                navn: "Tastatur", 
+
+                pris: 599, 
+
+                bilde: "Bilder/tastatur.jpg" 
+
+            }, 
+
+            { 
+
+                id: 2, 
+
+                navn: "Mus", 
+
+                pris: 299, 
+
+                bilde: "Bilder/mus.jpg" 
+
+            }, 
+
+            { 
+
+                id: 3, 
+
+                navn: "Skjerm", 
+
+                pris: 2499, 
+
+                bilde: "Bilder/skjerm.jpg" 
+
+            } 
+
+        ]; 
+
+        let handlekurv = [];
+
+        /*Forklarer */
+
+        handlekurv.push(produkter[0]);
+
+        console.log(handlekurv);
+
+        container.innerHTML += `
+
+
+
+
+    </script>
+
+
+    
+
+    
+
+    <div class="produktkort"> 
+
+        
+
+        <h2>${produkt.navn}</h2>
+
+        <img src="${produkt.bilde}" alt="${produkt.navn}"> 
+
+        <p>${produkt.pris} kr</p> 
+
+ 
+
+        <button class="kjopKnapp" data-id="${produkt.id}"> 
+
+            Legg i handlekurv 
+
+        </button> 
+
+    </div> 
+
+
+    
+</body>
+</html>

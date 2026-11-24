@@ -3,9 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LoopsOgArrays</title>
 </head>
 <body>
+
+    <style>
+
+    </style>
+    <script>
+
+
+
+        /*Oppg1*/
+
+        let frukt = ["eple", "banan", "kiwi"];
+
+        console.log(frukt[0]);
+
+        frukt.push("pære");
+
+        console.log(frukt.lenght);
+
+        /*Oppg2*/
+
+        let handleliste = ["melk", "brød", "ost", "egg"]; 
+        
+        for (let vare of handleliste) { 
+            console.log(vare); 
+        } 
+
+        /*Oppg3-Temperaturer*/
+
+        let temperaturer = [12, 14, 11, 9, 15, 17, 13]; 
+
+        let sum = 0;
+
+        for (let temperatur of temperaturer) {
+            sum = sum + temperatur;
+        }
+
+        /*Oppg4 Bestått eller ikke Bestått*/
+
+        let poeng = [72, 45, 91, 63, 38, 84, 56];
+
+
+
+
+        /*-------------------------------------------------------------------------*/
+
+        let elever = ["Ali", "Nora", "Sofie", "Jonas", "Emma"]; 
+
+        let poeng = [67, 89, 42, 76, 95];
+
+        /*Del A-Vis Resultatene*/
+
+        for (let i = 0; i < elever.length; i++) {
+
+        }
+
+        /*Del B-Legg til Status*/
+
+        /*Del C-Analyser Resultatene*/
+
+        /*Del D-Test*/
+
+        elever.push("Marius"); 
+        poeng.push(30);
+
+
+        /*Ekstra utfordring*/
+
+        let elever=[
+            
+            { navn: "Ali", poeng: 67 }, 
+            { navn: "Nora", poeng: 89 }, 
+            { navn: "Sofie", poeng: 42 } 
+        ]
+
+    </script>
+
+    <h3>Loops</h3>
+    <p>En loop brukes når vi vil gjenta en kode.</p>
+
+    <h3>Finne antall verdier</h3>
+    <p>Vi kan finne hvor mange elementer et array inneholder med: <br> frukt.length <br>Hvis arrayet inneholder fire verdier, blir 'frukt.length=4'</p>
+
+    <h3>Legge til verdier</h3>
+    <p>Vi kan legge til en ny verdi på slutten av et array med:<br> frukt.push("pære"); <br> Arrayet inneholder nå fire verdier.</p>
+
+    <h3>Loop med indeks</h3>
+    <p>Noen ganger trenger vi ikke bare verdien, men også plassen verdien ligger på.</p>
+
+
+
+
     
 </body>
 </html>
