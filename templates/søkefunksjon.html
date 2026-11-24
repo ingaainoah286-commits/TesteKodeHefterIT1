@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SokeFunksjonalitet</title>
+</head>
+<body>
+
+    <!--CSS styling-->
+
+    <style>
+
+    </style>
+
+    <!--Javascript-->
+
+    <script>
+
+        function visProdukter(liste) {
+            container.innerHTML="";
+
+
+            for(let produkt of produkter) {
+                container.innerHTML+=
+                <div class="produktkort">
+                    <h2>£{produkt.navn}</h2>
+                    <img class="ContIMG" src="€ndekjn" alt="€{produkt.navn}">
+                    <p>rhjhfckjdhck</p>
+
+                </div> ;
+                
+            }
+
+        
+        }
+
+        const sokefelt=document.getElementById("sokefelt");
+        console.log(sokefelt);
+
+
+        sokefelt.addEventListener("input",()=> {
+            console.log("Brukeren skriver");
+        });
+
+        let sok=sokefelt.value;
+        console.log(sok);
+        sokefelt.addEventListener("input",()=> {
+            let sok=sokefelt.value;
+            console.log("Du søker etter:",sok);
+        });
+
+
+        let sok = sokefelt.value.toLowerCase();
+
+        produkt.navn.toLowerCase()
+
+        let resultat = produkter.filter(produkt=>
+            produkt.avn.toLowerCase().includes(sok)
+        );
+
+        console.log(resultat);
+        sokefelt.addEventListener("input",()=>{
+            let sok= sokefelt.value.toLowerCase();
+
+            let resultat = produkter.filter(produkt=>
+                produkt.navn.toLowerCase().includes(sok)
+            );
+
+            console.log (resultat);
+        });
+
+        visProdukter(liste);
+        visProdukter(resultat);
+        sokefelt.addEventListener("input",()=>{
+            let sok= sokefelt.value.toLowerCase();
+
+            let resultat=produkt.filter(produkt=>
+                produkt.navn.toLowerCase().includes(sok)
+            ); 
+
+            visProdukter(resultat);
+
+        });
+
+        if(resultat.lenght===0){
+            console.log("ingen produkter funnet");
+
+        }
+
+        if(resultat.lenght===0){
+            container.innerHTML="<p>Ingen produkter funnet. </p>";
+        } else {
+            visProdukter(resultat);
+        }
+
+        const container=document.getElementById("produktContainer");
+        const sokefelt=document.getElementById("sokefelt");
+
+        function visProdukter(liste) {
+            container.innerHTML="";
+
+            for(let produkt of liste){
+                container.innerHTML+=
+                <div class="produktkort">
+
+                    <h2>${produkt.navn}</h2>
+
+                    <img
+                    class="ContIMG"
+                    src="${produkt.bilde}"
+                    alt="${produkt.navn}"
+                    >
+                    <p>"${produkt.navn}"</p>
+                    </div>
+                    ;
+            }
+        }
+
+        visProdukter(produkter);
+        sokefelt.addEventListener("input",()=>{
+            let sok=sokefelt.value.toLowerCase();
+            let resultat=produkter.filter(produkt=>
+                produkt.navn.toLowerCase().includes(sok)
+            );
+            if(resultat.lenght===0){
+                container.innerHTML="<p>Ingen produkter funnet.</p>";
+
+            } else {
+                visProdukter(resultat);
+            }
+        
+        });
+        
+
+
+
+
+    </script>
+
+    <!--HTML page-->
+
+    <nav class="" alt="">
+
+        <div class="" alt="">
+
+            <input type="text"
+            id="sokefelt"
+            placeholder="Skattejakt..."
+            >
+
+            <div class="" alt="" id="ProduktContainer">
+
+                
+
+            </div>
+
+            
+
+            
+        </div>
+
+    </nav>
+
+    <header class="" alt="">
+
+    </header>
+
+    <nav class="" alt="">
+
+    </nav>
+
+    <main class="" alt="">
+
+        <section class="" alt="">
+
+        </section>
+
+        <section class="" alt="">
+
+        </section>
+
+        <article class="" alt="">
+
+        </article>
+
+    </main>
+
+    <footer class="" alt="">
+
+    </footer>
+
+
+    
+</body>
+</html>
